@@ -12,7 +12,7 @@ int main(){
         break;
     }
     if(peak){
-        printf("%d",arr[i]);
+        printf("%d",peak);
     }else
     printf("-1");
 }
