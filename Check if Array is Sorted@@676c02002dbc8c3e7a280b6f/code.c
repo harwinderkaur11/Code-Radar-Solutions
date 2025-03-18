@@ -6,11 +6,19 @@ int main(){
     for(int i=0;i<=n;i++){
         scanf("%d",&arr[i]);
     }
-    for(int i=0;i<n-1;i++){
-        if(arr[i]>arr[i+1]){
-        printf("Not Sorted");
+    int sorted=1;
+    for (int i = 0; i < n - 1; i++) {
+        if (arr[i] > arr[i + 1]) { // Found an unsorted pair
+            sorted = 0;
+            break;
         }
-        else 
-        printf("Sorted");
     }
+
+    if (sorted)
+        printf("Sorted\n");
+    else
+        printf("Not Sorted\n");
+
+    return 0;
+
 }
