@@ -10,7 +10,6 @@ int main(){
     printArray(arr,n);
     return 0;
 }
-void main(){
+
     int bubbleSort(arr,n);
     int printArray(arr,n);
-}
